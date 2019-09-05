@@ -1,0 +1,359 @@
+.body{
+	margin: 0;
+	padding: 0;    
+}
+
+.hover_a{
+	color: #004691;
+	background-color: #bde4f6;
+	display: block;
+	text-decoration: none;
+}
+
+.main_block {
+    height: 100%;
+    float: left;
+    color: #004691;
+    font: 15px bold ;
+    display: table;
+}
+
+.image {
+    position: relative;
+    width: 100%; /* for IE 6 */
+}
+
+.main {
+    background-image: url("../images/rus.png");
+    background-size: cover;
+}
+
+.slideshow{
+    border: 2px solid #004691;
+    height:auto;
+    width:auto;
+    max-width: 400px
+}
+
+.main_block:last-child img {
+    margin-right: 10px;
+}
+
+.valign_center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    margin-bottom: 20px;
+    margin-top: -5px;
+    background-color: #004691;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+    text-align: right;
+    font-weight: bold;
+    color:white;
+    padding: 10px 0px;
+}
+ .btn-info{
+     background-color: #004691;
+     border-color: #004691;
+ }
+
+.container{
+    background-color: #004691;
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+}
+
+.col{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+ul:first-child{
+    padding-left: 20px;
+}
+
+p {
+    color:black;
+}
+
+.science-form {
+    width: 600px;
+    margin: 10px 100px;
+
+}
+
+ul li{
+	margin-left: 2px;
+}
+
+#left_menu{
+	float: left;
+	min-width: 230px;
+    height: 100%;
+}
+#right_menu{
+    width: auto;
+    float: left;
+    border: 1px solid black;
+}
+
+#table{
+	float: left;
+	margin-left: 10px;
+	border: 1px solid red;
+	min-width: 200px;
+	height: 100%;
+}
+.row img{
+    height: 100px; 
+    width: auto; 
+    padding: 10px 10px 0px 0px;
+    float: left;
+}
+
+.text-right{
+    padding-top: 15px; 
+    font-size: 25px;
+    margin: 20px 20px 30px 20px;
+    color: #FFFFFF; 
+    width: 360px;
+    float: right;
+}
+
+#cont{
+    height: auto;
+    background-color:white;
+    position: relative;
+}
+ul.dropdown li { position: relative; }
+ul.dropdown,
+ul.dropdown-inside {
+    list-style-type: none;
+    padding: 0;
+}
+ul.dropdown-inside {
+    position: absolute;
+    left: -9999px;
+}
+ul.dropdown li.dropdown-top {
+    display: inline;
+    float: left;
+    margin: 0 1px 0 0;
+}
+ul.dropdown li.dropdown-top a {
+    text-decoration: none;
+    display: block;
+}
+ul.dropdown a.dropdown-top { background: #efefef; }
+ul.dropdown a.dropdown-top:hover { }
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+    display: block;
+    left: 0;
+    margin-bottom: 5px;
+    width: 183px;
+    z-index: 10;
+}
+ul.dropdown .dropdown-inside { background: #fff; }
+ul.dropdown .dropdown-inside a:hover { background: #efefef; }
+
+.active{
+    background-color: #9ed6ef;
+}
+
+#exit{
+    width: 200px;
+    height: 50px;
+    float: right;
+}
+
+#exit{
+    position: absolute;
+    top: 14px;
+    right: 20px;
+}
+
+/* Слайдер */
+.slides {
+    height:500px;
+    margin:30px auto;
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+.slides ul {
+    list-style:none;
+    position:relative;
+}
+
+/* Кадры анимации #anim_slides */
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+.slides ul li {
+    opacity:0;
+    position:absolute;
+    top:0;
+
+    /* анимация css3 */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+/* Задержки css3 */
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+.slides ul li img {
+    display:block;
+}
+
+/* Кадры анимации #anim_titles */
+@-webkit-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+
+.slides ul li div {
+    background-color:#000000;
+    border-radius:10px 10px 10px 10px;
+    box-shadow:0 0 5px #FFFFFF inset;
+    color:#FFFFFF;
+    font-size:26px;
+    left:10%;
+    margin:0 auto;
+    padding:20px;
+    position:absolute;
+    top:50%;
+    width:200px;
+
+    /* Анимация css3 */
+    -webkit-animation-name: anim_titles;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+.ul_table{
+    list-style: none; 
+    margin-top: 10px;
+    width: 100%;
+    margin-left: -20px;
+}
+
+.ul_table li{
+    margin-bottom: 13px;
+}

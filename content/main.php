@@ -1,0 +1,2 @@
+<a <?php echo ($_GET['page'] == 'upr') ? "class='active'" : ""; ?> href="?page=upr">Управление имущественных и земельных отношений</a>
+<p><a <?php echo ($_GET['page'] == 's') ? "class='active'" : ""; ?> href="?page=s">Студгородок</a></p>

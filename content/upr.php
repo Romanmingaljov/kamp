@@ -1,0 +1,1 @@
+<?php fragment_galery(); ?>
